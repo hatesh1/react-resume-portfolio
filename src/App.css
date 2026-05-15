@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.resume-app {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Left Section Styling */
+.left {
+  flex: 1.2;
+  background: #f8f9fa;
+  padding: 2rem;
+  min-width: 300px;
+}
+
+.right {
+  flex: 0.8;
+  background: white;
+  padding: 2rem;
+  min-width: 280px;
+}
+
+/* Profile Image */
+.profile-image-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #667eea;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+/* Name Styling */
+.name {
+  font-size: 2rem;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #667eea;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+/* Section Headings */
+.section-heading {
+  font-size: 1.3rem;
+  color: #2d3748;
+  margin: 1.5rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.section-text {
+  color: #4a5568;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* Work Experience */
+.subsection-title {
+  color: #2d3748;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.date-text {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.achievements-title {
+  color: #4a5568;
+  margin: 0.75rem 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.achievements-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #4a5568;
+}
+
+.achievements-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Education */
+.education-item {
+  margin-bottom: 1rem;
+}
+
+.education-item h4 {
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+/* Projects */
+.projects-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projects-list>li {
+  margin-bottom: 1.5rem;
+}
+
+.projects-list h4 {
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.projects-list ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #4a5568;
+}
+
+.projects-list ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* Right Section Styling */
+.download-link {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.download-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.details-list {
+  margin: 0.5rem 0;
+}
+
+.details-list p {
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.detail-icon {
+  font-size: 1.1rem;
+  min-width: 30px;
+}
+
+/* Social Links */
+.social-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-links li {
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-links i {
+  font-size: 1.2rem;
+  width: 25px;
+  color: #667eea;
+}
+
+.social-links a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Skills Section */
+.skill-item {
+  margin-bottom: 1.25rem;
+}
+
+.skill-item h4 {
+  color: #2d3748;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.skill-item p {
+  color: #718096;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+  background: #e2e8f0;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.skill-fill {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+  width: 0;
+}
+
+/* Footer */
+.resume-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.resume-footer p {
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    padding: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.1rem;
+  }
+}
+
+/* Print Styles for PDF */
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .download-btn {
+    display: none;
+  }
+
+  .container {
+    box-shadow: none;
+  }
+
+  .skill-fill {
+    background: #667eea;
+  }
+
+  .profile-image {
+    border: 2px solid #667eea;
+  }
+}
+
+/* Animation for skill bars on load */
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.skill-fill {
+  animation: slideIn 0.8s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
